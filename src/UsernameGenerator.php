@@ -1,8 +1,8 @@
 <?php
 
-namespace Comsave\Tools\UsernameGenerator;
+namespace PhpArsenal\MythologicalUsernameGenerator;
 
-class MythologicalUsernameGenerator
+class UsernameGenerator
 {
     private const ADJECTIVES_FILE_PATH = 'adjectives.txt';
     private const GREEK_NAMES_FILE_PATH = 'greek_names.txt';
