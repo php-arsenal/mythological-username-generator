@@ -11,7 +11,7 @@ script:
 
 env:
   global:
-    - CC_TEST_REPORTER_ID=
+    - CC_TEST_REPORTER_ID=1382bec616ffe08d1c8b619d926dc22deaab1e84954d404dc225903cdc44f13b
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
