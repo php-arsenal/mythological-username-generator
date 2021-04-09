@@ -11,7 +11,7 @@ script:
 
 env:
   global:
-    - CC_TEST_REPORTER_ID=57bfc040724d435bc51f68da0034b2744e35374edce93d1671864072d7ba008f
+    - CC_TEST_REPORTER_ID=
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -22,6 +22,6 @@ after_script:
   - mv tests/_output/coverage.xml clover.xml
   - ./cc-test-reporter after-build --coverage-input-type clover --id $CC_TEST_REPORTER_ID --exit-code $TRAVIS_TEST_RESULT
 
-notifications:
-  slack:
-    secure:
+# notifications:
+#   slack:
+#     secure:
