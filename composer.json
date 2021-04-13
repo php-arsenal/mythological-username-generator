@@ -4,12 +4,12 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": ">=7.3"
+        "php": ">=7.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
-        "phpunit/php-code-coverage": "*",
-        "spatie/phpunit-snapshot-assertions": "*"
+        "phpunit/php-code-coverage": "^9.2",
+        "phpunit/phpunit": "^9.5",
+        "spatie/phpunit-snapshot-assertions": "^4.2"
     },
     "autoload": {
         "psr-4": {
