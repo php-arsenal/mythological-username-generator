@@ -22,11 +22,13 @@ class UsernameGenerator
     {
         srand($seed);
 
-        return vsprintf('%s%s%s', [
+        $username = vsprintf('%s%s%s', [
             $this->getRandomLineFromWordFile(static::ADJECTIVES_FILE_PATH),
             $this->getRandomLineFromWordFile(static::GREEK_NAMES_FILE_PATH),
             rand(1, 99)
         ]);
+
+        return preg_replace("/[^a-z0-9]/i", '', $username);
     }
 
     private function getRandomLineFromWordFile(string $resourceFileName): string
