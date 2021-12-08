@@ -20,7 +20,9 @@ class UsernameGenerator
 
     public function generateUsername(?int $seed = null): string
     {
-        srand($seed);
+        if($seed) {
+            srand($seed);
+        }
 
         $username = vsprintf('%s%s%s', [
             $this->getRandomLineFromWordFile(static::ADJECTIVES_FILE_PATH),
