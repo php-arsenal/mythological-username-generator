@@ -1,4 +1,4 @@
-# mythological-username-generator
+# mythological-username-generator-bundle
 
 Generates mythological usernames, ex.: `SpotlessBemus79`
 
