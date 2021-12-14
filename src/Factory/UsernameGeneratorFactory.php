@@ -8,6 +8,6 @@ class UsernameGeneratorFactory
 {
     public static function build(): UsernameGenerator
     {
-        return new UsernameGenerator(__DIR__ . '../Resources');
+        return new UsernameGenerator(__DIR__ . '/../Resources');
     }
 }
