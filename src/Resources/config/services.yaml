@@ -4,4 +4,4 @@ services:
     autoconfigure: true
 
   PhpArsenal\MythologicalUsernameGeneratorBundle\UsernameGenerator:
-    factory: [PhpArsenal\MythologicalUsernameGeneratorBundle\UsernameGeneratorFactory, build]
+    factory: [PhpArsenal\MythologicalUsernameGeneratorBundle\Factory\UsernameGeneratorFactory, build]
