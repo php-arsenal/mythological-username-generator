@@ -1,8 +1,8 @@
 <?php
 
-namespace PhpArsenal\MythologicalUsernameGenerator\Tests\Unit;
+namespace PhpArsenal\MythologicalUsernameGeneratorBundle\Tests\Unit;
 
-use PhpArsenal\MythologicalUsernameGenerator\UsernameGenerator;
+use PhpArsenal\MythologicalUsernameGeneratorBundle\UsernameGenerator;
 use PHPUnit\Framework\TestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace PhpArsenal\MythologicalUsernameGenerator\Tests\Unit;
+namespace PhpArsenal\MythologicalUsernameGeneratorBundle\Tests\Unit;
 
-use PhpArsenal\MythologicalUsernameGenerator\UsernameGenerator;
-use PhpArsenal\MythologicalUsernameGenerator\UsernameGeneratorBuilder;
+use PhpArsenal\MythologicalUsernameGeneratorBundle\Factory\UsernameGeneratorFactory;
+use PhpArsenal\MythologicalUsernameGeneratorBundle\UsernameGenerator;
 use PHPUnit\Framework\TestCase;
 
 class UsernameGeneratorBuilderTest extends TestCase
 {
     public function testBuild(): void
     {
-        $this->assertInstanceOf(UsernameGenerator::class, UsernameGeneratorBuilder::build());
+        $this->assertInstanceOf(UsernameGenerator::class, UsernameGeneratorFactory::build());
     }
 }

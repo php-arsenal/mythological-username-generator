@@ -1,0 +1,7 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  PhpArsenal\MythologicalUsernameGeneratorBundle\UsernameGenerator:
+    factory: [PhpArsenal\MythologicalUsernameGeneratorBundle\Factory, build]

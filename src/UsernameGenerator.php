@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpArsenal\MythologicalUsernameGenerator;
+namespace PhpArsenal\MythologicalUsernameGeneratorBundle;
 
 class UsernameGenerator
 {
